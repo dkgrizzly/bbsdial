@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS `bbslist` DEFAULT CHARACTER SET ascii COLLATE asci
 USE `bbslist`;
 
 CREATE USER `bbslist`@`localhost` IDENTIFIED BY `dialup`;
-GRANT ALL PRIVILIGES ON `bbslist` to `bbslist`@`localhost`;
+GRANT ALL PRIVILIGES ON `bbslist`.* to `bbslist`@`localhost`;
 
 CREATE TABLE `filters` (
   `name` varchar(8) NOT NULL,
