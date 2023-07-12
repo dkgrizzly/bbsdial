@@ -37,13 +37,14 @@ my $bbsproto = $bbsrow->[2];
 $dbh->disconnect;
 
 if("$bbsproto" eq "telnet") {
-  printf("TELNET TO "."$bbshost".":"."$bbsport"."\r\n");
+#  printf("TELNET TO "."$bbshost".":"."$bbsport"."\r\n");
   system("/usr/bin/telnet -8 -E $bbshost $bbsport");
   sleep 1;
   exit;
 }
 if("$bbsproto" eq "ssh") {
-  printf("SSH TO "."$bbshost".":"."$bbsport"."\r\n");
+#  printf("SSH TO "."$bbshost".":"."$bbsport"."\r\n");
+  system("/usr/bin/ssh -a -q -k -x -p $bbsport $bbshost");
   sleep 1;
   exit;
 }
