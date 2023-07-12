@@ -20,4 +20,5 @@ A Collection of perl scripts to map phone numbers to telnet connections on an as
 - add the following to /etc/mgetty/login.config:
 ```
 /AutoTEL/ nobody nobody /path/to/telnetshim.pl
+*       -       -       /bin/false
 ```
