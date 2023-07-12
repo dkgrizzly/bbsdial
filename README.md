@@ -1,5 +1,5 @@
 # bbsdial
-A Collection of perl scripts to map phone numbers to telnet connections on an asterisk dialup to telnet gateway
+A collection of perl scripts to map phone numbers to telnet connections on an asterisk dialup to telnet gateway
 
 # prerequisites
 - Asterisk (tested on 16)
